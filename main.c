@@ -6,7 +6,7 @@
 /*   By: ssowul <ssowul@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 14:35:02 by ssowul            #+#    #+#             */
-/*   Updated: 2025/10/06 00:31:11 by ssowul           ###   ########.fr       */
+/*   Updated: 2025/10/11 17:36:18 by ssowul           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -314,6 +314,45 @@ int	main(void)
 	printf(" ]\n");
 	*/
 	printf("\n---------- end memcpy----------\n\n");
+
+	printf("\n----------test memmove----------\n\n");
+	char memmoveVar1[] = "NOTHING";
+	/*
+	char memmoveVar2[5] = "\t\t00a";
+	int *memmoveVar3 = NULL;
+	int memmoveVar4[] = {1, 23, 33, 44444, 5123};
+	*/
+	printf("----------test1----------\n");
+	printf("inp: [ %s ]\n", memmoveVar1);
+	printf("exp: [ %s ]\n", "NOTNONG");
+	ft_memmove(memmoveVar1 + 2, memmoveVar1, 4);
+	printf("out: [ %s ]\n", memmoveVar1);
+	/*
+	printf("----------test2----------\n");
+	printf("inp: [ %s ]\n", memmoveVar2);
+	printf("exp: [ %s ]\n", "\0");
+	ft_memmove(memmoveVar2, 1);
+	printf("out: [ %s ]\n", memmoveVar2);
+	printf("----------test3----------\n");
+	printf("inp: [ %ls ]\n", memmoveVar3);
+	printf("exp: [ %s ]\n", "segmentation fault if uncommented");
+	//ft_memmove(memmoveVar3, 1);
+	printf("out: [ %ls ]\n", memmoveVar3);
+	printf("----------test4----------\n");
+	printf("inp: [ ");
+	for(int i = 0; i < 5; i++) {
+		printf("%d ", memmoveVar4[i]);
+	}
+	printf(" ]\n");
+	printf("exp: [ changed array based on n bytes ]\n");
+	ft_memmove(memmoveVar4, 5);
+	printf("out: [ ");
+	for(int i = 0; i < 5; i++) {
+		printf("%d ", memmoveVar4[i]);
+	}
+	printf(" ]\n");
+	*/
+	printf("\n---------- end memmove----------\n\n");
 
 
 	return (0);

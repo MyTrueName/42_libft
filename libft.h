@@ -6,7 +6,7 @@
 /*   By: ssowul <ssowul@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 20:05:51 by ssowul            #+#    #+#             */
-/*   Updated: 2025/10/06 00:29:01 by ssowul           ###   ########.fr       */
+/*   Updated: 2025/10/11 17:24:18 by ssowul           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,4 @@ int ft_strlen(char *str);
 void	*ft_memset(void *p, int c, size_t n);
 void	ft_bzero(void *p, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t n);

@@ -4,7 +4,7 @@ NAME = libft.a
 HEADER = libft.h
 FUNCTIONS = isalpha isdigit isalnum isascii \
 		   	isprint strlen  memset  bzero \
-			memcpy
+			memcpy  memmove
 SOURCE_FILES = $(addprefix ft_,$(addsuffix .c,$(FUNCTIONS)))
 OBJECT_FILES = $(addprefix ft_,$(addsuffix .o,$(FUNCTIONS)))
 
