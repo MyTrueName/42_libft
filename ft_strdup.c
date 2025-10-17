@@ -6,7 +6,7 @@
 /*   By: ssowul <ssowul@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 01:22:05 by ssowul            #+#    #+#             */
-/*   Updated: 2025/10/17 01:40:04 by ssowul           ###   ########.fr       */
+/*   Updated: 2025/10/17 11:32:18 by ssowul           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strdup(const char *s)
 	while(s[i] != '\0')
 		i++;
 	i++;
-	p = malloc(i);
+	p = malloc(i + 1);
 	if (p == (void *)0)
 		return ((void *)0);
 	while (i > 0)
